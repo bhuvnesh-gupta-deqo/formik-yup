@@ -45,13 +45,13 @@ function AddressForm() {
 
   return (
     <div>
-      <h3 className="text-center mt-4">Address Form</h3>
+      <h3 className="text-center mt-3">Address Form</h3>
       <Formik
       initialValues={initialValues}
       onSubmit={handleSubmit}
       validationSchema={validationSchema}
     >
-      <Form className="col-md-6 p-4 mx-auto mt-5">
+      <Form className="col-md-6 p-4 mx-auto mt-4">
         <InputField
           label="Address"
           name="Address"
@@ -60,7 +60,7 @@ function AddressForm() {
         <InputField
           label="Address 2"
           name="Address2"
-          placeholder="Enter your address"
+          placeholder="Optional address"
         />
          <InputField
           label="City"
